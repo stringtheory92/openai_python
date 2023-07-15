@@ -7,7 +7,8 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-model_id = 'gpt-3.5-turbo'
+model_id = 'gpt-4'
+# model_id = 'gpt-3.5-turbo'
 
 def ChatGPT_conversation(conversation):
     response = openai.ChatCompletion.create(
